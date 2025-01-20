@@ -1,44 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #7bb6ca;
+    background: #7AAF80;
 }
 
 header {
-    background: #f29a90;
+    background: #B6D3B5;
     color: white;
-}
-
-header ul {
-    list-style: none;
-    padding: 0.5rem 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-header ul li {
-    display: inline;
-    margin: 0.5rem 1rem;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-header ul li a:hover {
-    color: #ff5733;
-}
-
-header ul li a:focus {
-    color: yellow;
 }
 
 nav {
@@ -49,7 +21,7 @@ nav {
 }
 
 nav img {
-    width: 5%;
+    width: 100%;
     margin-top: 0.5rem;
     padding: 0.5rem;
 }
@@ -60,16 +32,18 @@ nav li {
 }
 
 footer {
-    background:  #f29a90;
+    display: flex;
+    background:  #B6D3B5;
     color: white;
-    text-align: center;
+    justify-content: space-around;
     margin-top: 2rem;
     padding: 0.1rem;
+    position: sticky;
 }
 
 /* Home */
 main {
-    color: white;
+    color: black;
     text-align: center;
     width: 100%;
 }
@@ -78,38 +52,28 @@ main h1 {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 2rem;
+    font-family: playfair;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-family: Quicksand;
 }
 
 main p {
     font-size: 1.2rem;
 }
 
-.button {
-    background: #ff5733;
-    color: white;
-    padding: 0.8rem 1.2rem;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 0.3rem;
-    transition: background 0.3s ease;
-}
-
-.button:hover {
-    background: #e76f51;
-}
-
-.button:focus {
-    background: yellow;
-}
-
-main video {
-    width: 40%;
+main img {
+    width: 85%;
     margin: 2rem auto 3%;
     border-radius: 1rem;
 }
 
 .container {
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     gap: 2%;
@@ -124,7 +88,8 @@ main video {
 .box {
     flex: 1;
     padding: 1.5rem;
-    background-color: #f29a90;
+    background-color: #B6D3B5;
+    border: 0.3rem solid #4E342E;
     border-radius: 1rem;
     text-align: left;
 }
@@ -132,11 +97,13 @@ main video {
 .box h2 {
     margin-bottom: 2rem;
     text-align: center;
+    font-family: Quicksand;
 }
 
 .box p {
     font-size: 1rem;
     line-height: 1.4;
+    font-family: Lora;
 }
 
 .box a {
@@ -158,8 +125,8 @@ main video {
 }
 
 .card {
-    background: #fff;
-    border: 0.2rem solid #f29a90;
+    background: #F2F1E6;
+    border: 0.3rem solid #4E342E;
     border-radius: 1rem;
     overflow: hidden;
     text-align: center;
@@ -194,7 +161,7 @@ main video {
     }
 
     nav img {
-        width: 20%;
+        width: 90%;
     }
 
     header ul {
@@ -211,14 +178,10 @@ main video {
         margin: 2rem;
     }
 
-    main video {
-        width: 90%;
-        border-radius: 1rem;
-    }
-
     .grid {
-        grid-template-columns: 1fr;
-        gap: 1.1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-right: 4.6rem;
     }
 
     .main h2, .main p {
@@ -226,12 +189,8 @@ main video {
         font-size: 1.2rem;
     }
 
-    .button {
-        font-size: 1rem;
-    }
-
     .card {
-        width: 90%;
+        width: 100%;
     }
 
     .box {
