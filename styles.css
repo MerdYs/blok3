@@ -13,22 +13,19 @@ header {
     color: white;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 10px;
-}
-
 nav img {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.5rem;
 }
 
-nav li {
-    text-align: center;
-    padding: 0.5rem;
+.button {
+    background: #4E342E;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.3rem;
 }
 
 footer {
